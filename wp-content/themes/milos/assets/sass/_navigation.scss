@@ -1,0 +1,282 @@
+/* -----------------------------------------
+	04. Navigation
+----------------------------------------- */
+.navigation-main {
+	margin-left: auto;
+	display: none;
+
+	&.toggled {
+		display: block;
+	}
+
+	@include media-breakpoint-up(lg) {
+		display: block;
+		max-width: 75%;
+	}
+
+	> div > ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		line-height: normal;
+		font-family: $secondary-font;
+
+		ul {
+			margin-left: 15px;
+			padding: 0;
+			display: none;
+
+			@include media-breakpoint-up(lg) {
+				margin-left: 0;
+				display: block;
+			}
+		}
+
+		li {
+			position: relative;
+			display: block;
+		}
+
+		.toggled-on {
+			> ul {
+				display: block;
+			}
+
+			> .dropdown-toggle {
+				&::before {
+					transform: rotate(180deg);
+				}
+			}
+		}
+
+		a {
+			display: block;
+			position: relative;
+			text-transform: uppercase;
+			color: $black;
+			font-size: 16px;
+			letter-spacing: -.05em;
+			padding: 10px 40px 10px 0;
+			border-bottom: 1px solid $border-color;
+
+			@include media-breakpoint-up(lg) {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+
+		.dropdown-toggle {
+			margin: 0;
+			width: auto;
+			height: auto;
+			padding: 3px 10px;
+			text-align: center;
+			background: none;
+			color: $black;
+			font-size: 20px;
+			border-left: 1px solid $border-color;
+			border-radius: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			line-height: 30px;
+
+			&::before {
+				content: "\f431";
+				font-family: Genericons;
+				display: inline-block;
+				transition: transform .18s ease;
+			}
+
+			@include media-breakpoint-up(lg) {
+				display: none;
+			}
+		}
+
+		// Active & Hover
+		li:hover > a,
+		li > a:focus,
+		.current-menu-item > a,
+		.current-menu-parent > a,
+		.current-menu-ancestor > a,
+		.current-page-ancestor > a,
+		.current_page_item > a,
+		.current_page_parent > a,
+		.current_page_ancestor > a {
+			color: $accent-color;
+		}
+
+		// Nav Buttons
+		// -----------------------------------
+		.nav-btn {
+			display: block;
+
+			> a {
+				@include button;
+				@include button-sm;
+				display: block;
+				margin: 10px 0;
+
+				&:focus {
+					color: $white;
+				}
+			}
+
+			@include media-breakpoint-up(lg) {
+				display: inline-block;
+				margin: 0 10px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+
+		// Large screen overrides
+		// -----------------------------------
+		@include media-breakpoint-up(lg) {
+			text-align: right;
+			font-weight: bold;
+
+			/* Functional Styles for Desktop Menu
+			=================================== */
+			li { position: relative; }
+			> li { display: inline-block; }
+			a { white-space: nowrap; }
+
+			ul {
+				text-align: left;
+				position: absolute;
+				z-index: 10;
+				visibility: hidden;
+				opacity: 0;
+				transition: transform .25s ease .2s, opacity .25s ease .2s, visibility 0s ease .35s;
+				transform: translate(0, 10px);
+			}
+
+			ul ul {
+				top: 0;
+				right: 100%;
+				transform: translate(-10px, 0);
+				margin-top: -16px;
+			}
+
+			> li {
+				&:last-child {
+					> ul {
+						right: 0;
+					}
+				}
+			}
+
+			li:hover,
+			li.focus {
+				> ul {
+					transition-delay: 0s, 0s, 0s;
+					visibility: visible;
+					opacity: 1;
+				}
+
+				ul {
+					z-index: 15;
+				}
+			}
+
+			> li:hover > ul,
+			> li.focus > ul {
+				transform: translate(0, 0);
+			}
+
+			li li:hover > ul,
+			li li.focus > ul {
+				transform: translate(0, 0);
+			}
+
+			// Development only
+			//> li:nth-child(3) {
+			//	ul { transform: translate(0, 0); visibility: visible !important; opacity: 1 !important; }
+			//	ul ul { transform: translate(0, 0); opacity: 1 !important; }
+			//}
+
+			.dropdown-toggle {
+				display: none;
+			}
+
+			/* Visual Styles
+			=================================== */
+			// Sub-menu containers
+			ul {
+				padding: 15px 0;
+				margin: 0;
+				list-style: none;
+				background-color: $white;
+				border: 1px solid rgba($border-color, .5);
+				border-bottom: 2px solid $border-color;
+				border-radius: 3px;
+				min-width: 200px;
+			}
+
+			// Global Menu Link Styles
+			a {
+				font-size: 12px;
+				border: 0;
+			}
+
+
+			// Sub-Menu Links
+			// -----------------------------------
+
+			// Default Styles
+			li li a {
+				padding: 5px 15px;
+			}
+
+			// Arrows
+			// -----------------------------------
+
+			// First Level (Facing Down)
+			.menu-item-has-children,
+			.page_item_has_children {
+				> a::after {
+					content: "\f431";
+					font-family: Genericons;
+					font-size: 12px;
+					position: relative;
+					top: -1px;
+					right: -3px;
+					line-height: normal;
+				}
+			}
+
+			// Sub-Menus (Facing Right)
+			li .menu-item-has-children,
+			li .page_item_has_children {
+				> a::after {
+					position: absolute;
+					right: 10px;
+					top: 50%;
+					transform: translateY(-50%) rotate(-90deg);
+				}
+			}
+		}
+	}
+}
+
+.menu-toggle {
+	display: none;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	.genericon {
+		font-size: 14px;
+		margin-right: 3px;
+	}
+
+	&[aria-expanded="true"] {
+		.genericon-menu {
+			&::before {
+				content: "\f406";
+			}
+		}
+	}
+}

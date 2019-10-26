@@ -1,0 +1,166 @@
+// Button Mixins
+@mixin button-reset {
+	display: inline-block;
+	font-weight: normal;
+	margin: 0;
+	line-height: normal;
+	border: 0;
+	box-shadow: none;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	white-space: nowrap;
+	transition: .18s background-color ease,
+	            .18s color ease,
+	            .18s border-color ease;
+	user-select: none;
+	border-radius: 0;
+	width: auto;
+	height: auto;
+	background-image: none;
+}
+
+@mixin button {
+	@include button-reset;
+	text-transform: uppercase;
+	background-color: $accent-color;
+	border: 0;
+	color: $text-on-accent;
+	font-size: 12px;
+	font-family: $secondary-font;
+	letter-spacing: -.05em;
+
+	&:active {
+		outline: none;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: $text-on-accent;
+		background-color: $accent-active;
+	}
+
+	&:focus {
+		outline: 0;
+		color: $text-on-accent;
+
+		@include media-breakpoint-up(lg) {
+			box-shadow: 0 0 10px rgba($accent-color, .7);
+		}
+	}
+}
+
+@mixin button-sm {
+	padding: 12px 32px 11px;
+	border-radius: 24px;
+}
+
+@mixin button-md {
+	padding: 22px 60px;
+	border-radius: 30px;
+}
+
+@mixin button-lg {
+	padding: 26px 66px;
+	border-radius: 36px;
+}
+
+// Placeholders
+@mixin placeholder {
+	::-webkit-input-placeholder { @content }
+	:-moz-placeholder { @content }
+	::-moz-placeholder { @content }
+	:-ms-input-placeholder { @content }
+}
+
+@mixin placeholder-at {
+	&::-webkit-input-placeholder { @content }
+	&:-moz-placeholder { @content }
+	&::-moz-placeholder { @content }
+	&:-ms-input-placeholder { @content }
+}
+
+// Ensuring text doesn't overflow its container and breaks nicely
+@mixin truncate-text($overflow: ellipsis) {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: $overflow; // clip, ellipsis, or a string
+}
+
+// Loading spinner
+@keyframes rot {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+@mixin spinner($color: #ffffff, $opacity: .35, $size: 40px) {
+	border: 6px solid rgba($color, $opacity);
+	border-top-color: rgba($color, $opacity * 2.5);
+	border-radius: 100%;
+	height: $size;
+	width: $size;
+	animation: rot .8s infinite linear;
+}
+
+// Theme Specific Mixins
+@mixin font-style($fz: 13px) {
+	text-transform: uppercase;
+	font-size: $fz;
+	line-height: normal;
+	font-weight: 400;
+}
+
+@mixin select-style {
+	display: block;
+	width: 100%;
+	padding: 6px 15px;
+	border-radius: 1px;
+	font-size: 14px;
+	height: 50px;
+	font-weight: normal;
+	border: 1px solid $border-color;
+	background: $light-grey;
+}
+
+@mixin section-widgets($pad: 100px) {
+	.widget-section {
+		margin-top: $pad;
+
+		&:nth-child(2n) {
+			background-color: $grey;
+		}
+
+		&:first-child {
+			&.widget-padded {
+				margin-top: 0;
+			}
+
+			.widget-sections-footer & {
+				margin-top: 0;
+			}
+		}
+
+		&:last-child {
+			&:not(.widget-padded) {
+				margin-bottom: $pad;
+			}
+		}
+	}
+
+	.widget-padded {
+		+ .widget-padded {
+			margin-top: 0;
+		}
+	}
+
+	.widget-wrap {
+		.widget-padded & {
+			padding: $pad 0;
+		}
+	}
+}

@@ -1,0 +1,166 @@
+/* -----------------------------------------
+	10. External Plugins
+----------------------------------------- */
+
+/* Jetpack Sharing
+=================================== */
+.sharedaddy {
+	margin: 30px 0;
+	padding: 10px 0 15px;
+	border-top: 1px solid $border-color;
+	border-bottom: 1px solid $border-color;
+
+	h3 {
+		text-transform: uppercase;
+
+		&::before {
+			display: none !important;
+		}
+	}
+
+	.sd-content {
+		ul {
+			margin: 0 !important;
+		}
+	}
+}
+
+/* WP Instagram
+=================================== */
+.null-instagram-feed {
+	p {
+		padding-top: 10px;
+	}
+}
+
+.widget {
+	.instagram-pics {
+		@include clearfix;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			border-bottom: 0;
+			padding: 0;
+			float: left;
+			width: 33.33333333333%;
+
+			a {
+				display: block;
+				color: $text-color;
+			}
+		}
+	}
+}
+
+/* Jetpack Socials
+=================================== */
+.jetpack-social-navigation {
+	.menu-item {
+		margin: 0 5px;
+	}
+
+	a {
+		color: $black;
+		font-size: 16px;
+
+		&:hover {
+			color: $accent-color;
+		}
+	}
+
+	.site-social & {
+		vertical-align: middle;
+
+		svg {
+			float: left;
+			margin-right: 3px;
+		}
+
+		.screen-reader-text {
+			position: static;
+			width: auto;
+			height: auto;
+			margin: 0;
+			clip: auto;
+			text-transform: uppercase;
+			font-size: 12px;
+		}
+	}
+}
+
+/* Jetpack Contact Form
+=================================== */
+form.contact-form { // Overcoming specificity
+	label {
+		font-weight: normal;
+	}
+
+	br {
+		display: none;
+	}
+
+	.widget-section & {
+		max-width: 555px;
+		margin: 0 auto;
+
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+
+		.contact-submit {
+			text-align: center;
+		}
+	}
+}
+
+/* Jetpack Galleries
+=================================== */
+.tiled-gallery {
+	&.type-rectangular,
+	&.type-square {
+		background-color: $body-bg;
+		border: 15px solid $body-bg;
+		border-radius: 4px;
+		box-shadow: 0 0 60px rgba($black, .08);
+	}
+}
+
+/* Jetpack Testimonial Shortcode
+=================================== */
+.jetpack-testimonial-shortcote {
+	.entry-content & {
+		&:not(:first-child) {
+			margin-top: 50px;
+		}
+	}
+}
+
+/* Magnific Popup Overrides
+=================================== */
+.mfp-arrow,
+.mfp-close {
+	&:hover,
+	&:focus {
+		background: none;
+	}
+}
+
+/* Contact Form 7
+=================================== */
+.wpcf7-form-control {
+	margin-bottom: 25px;
+}
+
+span.wpcf7-not-valid-tip {
+	margin-top: -23px;
+}
+
+div.wpcf7-response-output {
+	font-size: 14px;
+	padding: 15px;
+}

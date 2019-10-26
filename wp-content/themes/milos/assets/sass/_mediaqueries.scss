@@ -1,0 +1,280 @@
+// sass-lint:disable no-empty-rulesets
+
+/* -----------------------------------------
+	13. Global Mediaqueries
+----------------------------------------- */
+
+// xs: mobiles
+// sm: small tablets / phablets
+// md: tablets
+// lg: tablets / small laptops
+// xl: desktop
+
+@include media-breakpoint-up(xs) { }
+@include media-breakpoint-up(sm) { }
+@include media-breakpoint-up(md) { }
+@include media-breakpoint-up(lg) { }
+@include media-breakpoint-up(xl) { }
+
+@include media-breakpoint-down(xl) { }
+@include media-breakpoint-down(lg) {
+	.site-brand {
+		max-width: 225px;
+	}
+
+	.jumbo-title {
+		font-size: 80px;
+	}
+
+	.page-title {
+		font-size: 48px;
+	}
+
+	h1 { font-size: 38px; }
+	h2 { font-size: 34px; }
+	h3 { font-size: 30px; }
+	h4 { font-size: 26px; }
+	h5 { font-size: 22px; }
+	h6 { font-size: 20px; }
+
+	.widget-wrap {
+		.widget-section-bg & {
+			background-attachment: scroll;
+			min-height: 0;
+			display: block;
+
+			.container {
+				width: auto;
+			}
+		}
+	}
+}
+@include media-breakpoint-down(md) {
+	.site-brand {
+		max-width: 60%;
+	}
+
+	.menu-toggle {
+		display: inline-block;
+		margin-left: auto;
+	}
+
+	.navigation-main {
+		width: 100%;
+		margin: 20px 0 0;
+		flex: 1 0 100%;
+	}
+
+	.page-hero,
+	.main,
+	.footer {
+		padding: 60px 0;
+	}
+
+	.widget-sections {
+		padding: 0;
+	}
+
+	@include section-widgets($pad: 60px);
+
+	.jumbo-title {
+		font-size: 60px;
+	}
+
+	.slick-arrow {
+		display: none !important;
+	}
+
+	.page-title {
+		font-size: 48px;
+	}
+
+	.section-title {
+		font-size: 40px;
+	}
+
+	.sidebar {
+		margin-top: 50px;
+	}
+
+	h1 { font-size: 32px; }
+	h2 { font-size: 30px; }
+	h3 { font-size: 26px; }
+	h4 { font-size: 22px; }
+	h5 { font-size: 20px; }
+	h6 { font-size: 18px; }
+
+	.entry-header,
+	.entry-thumb {
+		margin-bottom: 40px;
+	}
+
+	.letter-stylized {
+		left: -25px;
+		top: -20px;
+	}
+
+	.item-testimonial,
+	.testimonial-entry {
+		.testimonial-entry-content {
+			line-height: 1.4;
+			font-size: 16px
+		}
+	}
+}
+@include media-breakpoint-down(sm) {
+	.page-jumbotron {
+		height: 540px;
+		min-height: 0;
+		padding-top: 0;
+	}
+
+	.page-hero {
+		padding: 50px 0 40px;
+	}
+
+	.main {
+		padding: 50px 0;
+	}
+
+	.widget-sections {
+		padding: 0;
+	}
+
+	@include section-widgets($pad: 50px);
+
+	.jumbo-title {
+		font-size: 44px;
+		margin-bottom: 20px;
+	}
+
+	.jumbo-subtitle {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.page-title {
+		font-size: 32px;
+		margin-bottom: 10px;
+	}
+
+	.page-meta {
+		font-size: 18px;
+	}
+
+	.section-title {
+		font-size: 28px;
+		line-height: 1.1;
+	}
+
+	.section-subtitle {
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
+
+	.item-testimonial {
+		font-size: 18px;
+	}
+
+	[class*="testimonial-entry-column-"] {
+		width: 100% !important;
+		float: none !important;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.sidebar {
+		margin-top: 50px;
+	}
+
+	h1 { font-size: 26px; }
+	h2 { font-size: 24px; }
+	h3 { font-size: 22px; }
+	h4 { font-size: 20px; }
+	h5 { font-size: 18px; }
+	h6 { font-size: 16px; }
+
+	.entry-content {
+		h1, h2, h3, h4, h5, h6 {
+			margin-top: 25px;
+			margin-bottom: 15px;
+		}
+	}
+
+	.entry-header {
+		margin-bottom: 30px;
+	}
+
+	.entry-thumb {
+		margin-bottom: 25px;
+		padding: 5px;
+	}
+
+	.entry-meta {
+		font-size: 15px;
+
+		> span {
+			&::before {
+				margin-left: 3px;
+				margin-right: 3px;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	.btn-read-more,
+	.more-link {
+		margin-top: 20px;
+	}
+
+	.navigation {
+		a,
+		span {
+			padding: 7px 14px;
+			font-size: 10px;
+		}
+	}
+
+	.widget {
+		margin-bottom: 40px;
+	}
+
+	.item-thumb {
+		img {
+			padding: 5px;
+		}
+	}
+
+	.tiled-gallery {
+		&.type-rectangular,
+		&.type-square {
+			border-width: 5px;
+		}
+	}
+
+	.item-title {
+		font-size: 18px;
+	}
+
+	.item-menu {
+		margin-bottom: 20px;
+	}
+
+	.item-menu-head {
+		flex-direction: column;
+	}
+
+	.item-menu-price {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+
+	.item-menu-thumb {
+		margin-right: 10px;
+	}
+
+	.site-logo-footer {
+		font-size: 32px;
+	}
+}
+@include media-breakpoint-down(xs) { }

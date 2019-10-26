@@ -1,0 +1,45 @@
+/* -----------------------------------------
+	05. Header
+----------------------------------------- */
+.header {
+	background-color: $grey;
+	border-bottom: 1px solid $border-color;
+	padding: 25px 0;
+	transition: background-color .25s ease, border-color .25s ease, padding .25s ease;
+
+	&.is_stuck {
+		z-index: 100;
+		padding: 10px 0;
+		background-color: rgba($grey, .9);
+	}
+}
+
+.mast-head-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.site-brand {
+	max-width: 280px;
+}
+
+.site-title {
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0;
+	line-height: 1;
+	font-family: $secondary-font;
+	color: $heading-color;
+	letter-spacing: -.05em;
+
+	a {
+		color: $heading-color;
+	}
+}
+
+.site-description {
+	font-size: 13px;
+	line-height: normal;
+	margin: 0;
+}

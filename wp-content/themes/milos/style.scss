@@ -1,0 +1,56 @@
+/*
+Theme Name: Milos
+Theme URI: https://www.cssigniter.com/ignite/themes/milos/
+Author: The CSSIgniter Team
+Author URI: https://www.cssigniter.com
+Description: Business theme for WordPress
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: milos
+Tags: classic-menu, custom-background, custom-menu, featured-content-with-pages, featured-images, fixed-menu, multiple-menus, one-page, post-slider, rtl-language-support, site-logo, social-menu, sticky-post, testimonials, threaded-comments, video, fixed-layout, responsive-layout, one-column, right-sidebar, two-columns, bright, clean, colorful, contemporary, elegant, glamorous, light, minimal, modern, professional, simple, sophisticated, blog, business, design, food, hotel, news, photoblogging, photography, seasonal, travel, blue, light, white
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Milos is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+	01. Normalization
+	02. Grid Layout
+	03. Base & General
+	04. Navigation
+	05. Header
+	06. Generic Modules & Layout
+	07. Site Footer
+	08. WordPress Comments
+	09. Widgets & Widget Sections
+	10. External Plugins
+	11. WordPress Defaults
+	12. Infinite Scrolling
+	13. Global Mediaqueries
+--------------------------------------------------------------*/
+
+@import "assets/sass/variables";
+@import "assets/sass/normalize";
+@import "assets/sass/grid";
+@import "assets/sass/mixins/grid";
+@import "assets/sass/mixins/theme";
+@import "assets/sass/base";
+@import "assets/sass/navigation";
+@import "assets/sass/header";
+@import "assets/sass/modules";
+@import "assets/sass/footer";
+@import "assets/sass/comments";
+@import "assets/sass/widgets";
+@import "assets/sass/external";
+@import "assets/sass/wp-defaults";
+@import "assets/sass/infinite-scroll";
+@import "assets/sass/mediaqueries";

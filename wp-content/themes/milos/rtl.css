@@ -1,0 +1,161 @@
+/*--------------------------------------------------------------
+# Normalization
+--------------------------------------------------------------*/
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	margin-right: auto;
+	margin-left: .4375em;
+}
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@media (min-width: 992px) {
+	.offset-lg-1 {
+		margin-left: 0;
+		margin-right: 8.33333%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.offset-xl-2 {
+		margin-left: 0;
+		margin-right: 16.66667%;
+	}
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.nav-footer a,
+.item-title,
+.navigation a,
+.navigation span,
+.page-links .page-number,
+.navigation-main > div > ul,
+.item-testimonial cite,
+.testimonial-entry .testimonial-entry-title,
+.widget li a,
+.btn,
+.comment-reply-link,
+input[type="submit"],
+input[type="reset"],
+button {
+	font-family: sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+ul,
+ol {
+	margin: 0 1em 1em 0;
+	padding: 0 .2em 0 0;
+}
+
+li > ul,
+li > ol {
+	margin-left: 0;
+	margin-right: 1em;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+.navigation-main {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+@media (max-width: 991px) {
+	.navigation-main > div > ul a {
+		padding-left: 40px;
+		padding-right: 0;
+	}
+	.navigation-main > div > ul .dropdown-toggle {
+		right: auto;
+		left: 0;
+		border: 0;
+	}
+}
+
+@media (min-width: 992px) {
+	.navigation-main > div > ul {
+		text-align: left;
+	}
+	.navigation-main > div > ul ul {
+		right: auto;
+		left: 0;
+	}
+	.navigation-main > div > ul ul ul {
+		left: 100%;
+		right: auto;
+	}
+	.navigation-main > div > ul > li:last-child > ul {
+		right: auto;
+		left: 0;
+	}
+}
+
+.menu-toggle {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@media (min-width: 1200px) {
+	.main > .container > .row > .col-lg-8 {
+		padding-right: 15px;
+		padding-left: 45px;
+	}
+}
+
+.main-with-sidebar .entry-title,
+.main-with-sidebar .entry-meta {
+	text-align: right;
+}
+
+.meta-nav,
+.nav-next a::after {
+	display: inline-block;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	margin-right: 5px;
+}
+
+.nav-previous a::before {
+	display: inline-block;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	margin-left: 5px;
+}
+
+.comment-reply-link {
+	right: auto;
+	left: 0;
+}
+
+.comment-author .avatar {
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+.post-password-form input[type="submit"],
+.search-form input[type="submit"] {
+	right: auto;
+	left: 3px;
+}
+
+.letter-stylized {
+	display: none;
+}

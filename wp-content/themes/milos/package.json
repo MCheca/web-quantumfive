@@ -1,0 +1,34 @@
+{
+  "name": "miloscom",
+  "version": "1.0.0",
+  "author": "CSSIgniter",
+  "license": "GPL",
+  "scripts": {
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.0",
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "browser-sync": "^2.18.11",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions"
+            ]
+          }
+        }
+      ]
+    ]
+  }
+}

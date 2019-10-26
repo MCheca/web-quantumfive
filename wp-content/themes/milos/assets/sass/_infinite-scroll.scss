@@ -1,0 +1,59 @@
+/* -----------------------------------------
+	12. Infinite Scrolling
+----------------------------------------- */
+
+// Infinite loading button
+#infinite-handle {
+	text-align: center;
+
+	span {
+		@include button;
+		@include button-md;
+	}
+}
+
+.infinite-loader {
+	.spinner {
+		left: 50% !important;
+		transform: translateX(-50%);
+	}
+}
+
+#infinite-footer {
+	display: none;
+
+	.container {
+		padding: 10px 0;
+	}
+}
+
+.infinite-scroll {
+	#infinite-footer {
+		display: block;
+	}
+
+	// Globally hidden elements when Infinite Scroll is supported and in use.
+	.posts-navigation { // Older / Newer Posts Navigation (always hidden)
+		display: none;
+	}
+
+	&.neverending {
+		// Theme Footer (when set to scrolling)
+		.footer {
+			display: none;
+		}
+	}
+}
+
+// When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before.
+.infinity-end {
+	&.neverending {
+		.footer {
+			display: block;
+		}
+
+		#infinite-footer {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,894 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Social Feed Gallery\n"
+"POT-Creation-Date: 2019-08-09 08:43-0300\n"
+"PO-Revision-Date: 2019-08-09 08:43-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: insta-gallery.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/ajax.php:28
+msgid "Settings updated successfully"
+msgstr ""
+
+#: includes/ajax.php:31 includes/ajax.php:68 includes/ajax.php:91
+#: includes/ajax.php:170 includes/ajax.php:191
+msgid "Invalid Request"
+msgstr ""
+
+#: includes/ajax.php:41
+msgid "Empty access token"
+msgstr ""
+
+#: includes/ajax.php:47
+msgid "Invalid access token"
+msgstr ""
+
+#: includes/ajax.php:55
+msgid ""
+"Account already connected. To connect a new account logout from Instagram in "
+"this browser."
+msgstr ""
+
+#: includes/ajax.php:65
+msgid "Access token created"
+msgstr ""
+
+#: includes/ajax.php:78 includes/frontend.php:56
+msgid "Invalid item id"
+msgstr ""
+
+#: includes/ajax.php:88
+msgid "Token removed successfully"
+msgstr ""
+
+#: includes/ajax.php:101
+msgid "Select gallery item type"
+msgstr ""
+
+#: includes/ajax.php:104
+msgid "Username is empty"
+msgstr ""
+
+#: includes/ajax.php:107
+msgid "Tag is empty"
+msgstr ""
+
+#: includes/api.php:274
+msgid "Please provide a valid #tag"
+msgstr ""
+
+#: includes/api.php:305
+msgid "Unknow error occurred, please try again"
+msgstr ""
+
+#: includes/frontend.php:248
+#, php-format
+msgid "The layout %s is not a available."
+msgstr ""
+
+#: includes/pages/premium.php:4 includes/pages/views/edit.php:94
+#: includes/pages/views/edit.php:99 includes/settings.php:13
+#: includes/settings.php:143
+msgid "Premium"
+msgstr ""
+
+#: includes/pages/premium.php:6
+#, php-format
+msgid ""
+"Unlock the power of our premium %s plugin which allows you to add unlimited "
+"Instagram accounts and offers you more layout options."
+msgstr ""
+
+#: includes/pages/premium.php:9
+msgid "Purchase Now"
+msgstr ""
+
+#: includes/pages/premium.php:10
+msgid "Get Support"
+msgstr ""
+
+#: includes/pages/premium.php:14
+msgid "Multiple accounts"
+msgstr ""
+
+#: includes/pages/premium.php:16
+msgid ""
+"Include unlimited user accounts and create feeds galleries for different "
+"users with their own layout and settings."
+msgstr ""
+
+#: includes/pages/premium.php:20
+msgid "Customize colors"
+msgstr ""
+
+#: includes/pages/premium.php:22
+msgid ""
+"Customize the colors of the Instagram Feed with a custom background, "
+"padding, and a rounded border. It also includes the user or tag profile info "
+"in the header of the box."
+msgstr ""
+
+#: includes/pages/premium.php:26
+msgid "Load more button"
+msgstr ""
+
+#: includes/pages/premium.php:28
+msgid ""
+"Allow your users to load more images in the gallery providing an improved "
+"user experience."
+msgstr ""
+
+#: includes/pages/premium.php:43
+msgid "More content"
+msgstr ""
+
+#: includes/pages/premium.php:45
+msgid "Include some extra content for the images and the images popup."
+msgstr ""
+
+#: includes/pages/premium.php:50
+msgid "Popup content"
+msgstr ""
+
+#: includes/pages/premium.php:52
+msgid ""
+"Our premium version allows you to include some extra content in the image "
+"popup, like the user profile, the image caption, and the number of comments "
+"and likes."
+msgstr ""
+
+#: includes/pages/premium.php:60
+msgid "Layouts"
+msgstr ""
+
+#: includes/pages/premium.php:62
+msgid ""
+"Unlock the power of the masonry and highlight layouts that allows you to "
+"display the Instagram Feeds in a grid that supports items of variable size."
+msgstr ""
+
+#: includes/pages/premium.php:67
+msgid "Masonry layout"
+msgstr ""
+
+#: includes/pages/premium.php:69
+msgid ""
+"The masonry layout is a grid that displays the images with a fixed with and "
+"variable height size."
+msgstr ""
+
+#: includes/pages/premium.php:73
+msgid "Highlight layout"
+msgstr ""
+
+#: includes/pages/premium.php:75
+msgid ""
+"The highlight layout is a masonry grid that allows you to stand out some "
+"images with two or three columns width size."
+msgstr ""
+
+#: includes/pages/token.php:7 includes/pages/token.php:8
+msgid "Add New Account"
+msgstr ""
+
+#: includes/pages/token.php:11
+msgid "Button not working?"
+msgstr ""
+
+#: includes/pages/token.php:14
+msgid "Manually connect an account"
+msgstr ""
+
+#: includes/pages/token.php:16
+msgid "Enter a valid Access Token"
+msgstr ""
+
+#: includes/pages/token.php:18 includes/pages/token.php:118
+#: includes/pages/views/edit.php:624
+msgid "Update"
+msgstr ""
+
+#: includes/pages/token.php:20
+msgid "Get access token"
+msgstr ""
+
+#: includes/pages/token.php:28 includes/pages/views/list.php:17
+msgid "Image"
+msgstr ""
+
+#: includes/pages/token.php:29
+msgid "ID"
+msgstr ""
+
+#: includes/pages/token.php:30 includes/pages/views/edit.php:17
+#: includes/pages/views/edit.php:38
+msgid "User"
+msgstr ""
+
+#: includes/pages/token.php:31
+msgid "Name"
+msgstr ""
+
+#: includes/pages/token.php:32
+msgid "Token"
+msgstr ""
+
+#: includes/pages/token.php:33 includes/pages/views/list.php:21
+msgid "Action"
+msgstr ""
+
+#: includes/pages/token.php:52
+msgid "Copy"
+msgstr ""
+
+#: includes/pages/token.php:55 includes/pages/views/list.php:54
+msgid "Delete"
+msgstr ""
+
+#: includes/pages/token.php:75
+msgid "Loader icon"
+msgstr ""
+
+#: includes/pages/token.php:89
+msgid "Upload"
+msgstr ""
+
+#: includes/pages/token.php:90
+msgid "Reset Spinner"
+msgstr ""
+
+#: includes/pages/token.php:92
+msgid "Please select the image from media to replace with default loader icon."
+msgstr ""
+
+#: includes/pages/token.php:101
+msgid "Remove data on uninstall"
+msgstr ""
+
+#: includes/pages/token.php:105
+msgid ""
+"Check this box to remove all data related to this plugin when removing the "
+"plugin."
+msgstr ""
+
+#: includes/pages/views/edit.php:12 includes/pages/views/list.php:19
+msgid "Type"
+msgstr ""
+
+#: includes/pages/views/edit.php:22 includes/pages/views/edit.php:66
+msgid "Tag"
+msgstr ""
+
+#: includes/pages/views/edit.php:27
+msgid "Please select option to display images from Instagram @username or #tag"
+msgstr ""
+
+#: includes/pages/views/edit.php:42
+#, php-format
+msgid ""
+"No Instagram account connected. Please connect your account <a href=\"%s"
+"\">here</a>."
+msgstr ""
+
+#: includes/pages/views/edit.php:54
+msgid "Please enter Instagram username"
+msgstr ""
+
+#: includes/pages/views/edit.php:69
+msgid "Please enter Instagram tag"
+msgstr ""
+
+#: includes/pages/views/edit.php:79
+msgid "Layout"
+msgstr ""
+
+#: includes/pages/views/edit.php:84
+msgid "Gallery"
+msgstr ""
+
+#: includes/pages/views/edit.php:89
+msgid "Carousel"
+msgstr ""
+
+#: includes/pages/views/edit.php:94
+msgid "Masonry"
+msgstr ""
+
+#: includes/pages/views/edit.php:99
+msgid "Highlight"
+msgstr ""
+
+#: includes/pages/views/edit.php:112
+msgid "Box"
+msgstr ""
+
+#: includes/pages/views/edit.php:116
+msgid "Display the Instagram Feed inside a customizable box"
+msgstr ""
+
+#: includes/pages/views/edit.php:118 includes/pages/views/edit.php:134
+#: includes/pages/views/edit.php:144 includes/pages/views/edit.php:154
+#: includes/pages/views/edit.php:170 includes/pages/views/edit.php:180
+#: includes/pages/views/edit.php:221 includes/pages/views/edit.php:229
+#: includes/pages/views/edit.php:237 includes/pages/views/edit.php:334
+#: includes/pages/views/edit.php:350 includes/pages/views/edit.php:360
+#: includes/pages/views/edit.php:370 includes/pages/views/edit.php:389
+#: includes/pages/views/edit.php:399 includes/pages/views/edit.php:438
+#: includes/pages/views/edit.php:446 includes/pages/views/edit.php:456
+#: includes/pages/views/edit.php:469 includes/pages/views/edit.php:533
+#: includes/pages/views/edit.php:549 includes/pages/views/edit.php:559
+#: includes/pages/views/edit.php:569
+msgid "This is a premium feature."
+msgstr ""
+
+#: includes/pages/views/edit.php:128
+msgid "Box padding"
+msgstr ""
+
+#: includes/pages/views/edit.php:132
+msgid "Add padding to the Instagram Feed"
+msgstr ""
+
+#: includes/pages/views/edit.php:138
+msgid "Box radius"
+msgstr ""
+
+#: includes/pages/views/edit.php:142 includes/pages/views/edit.php:348
+msgid "Add radius to the Instagram Feed"
+msgstr ""
+
+#: includes/pages/views/edit.php:148
+msgid "Box background"
+msgstr ""
+
+#: includes/pages/views/edit.php:152
+msgid "Color which is displayed on box background"
+msgstr ""
+
+#: includes/pages/views/edit.php:164
+msgid "Profile"
+msgstr ""
+
+#: includes/pages/views/edit.php:168 includes/pages/views/edit.php:436
+msgid "Display user profile or tag info"
+msgstr ""
+
+#: includes/pages/views/edit.php:174
+msgid "Profile description"
+msgstr ""
+
+#: includes/pages/views/edit.php:178
+msgid "Box description here"
+msgstr ""
+
+#: includes/pages/views/edit.php:190
+msgid "Limit"
+msgstr ""
+
+#: includes/pages/views/edit.php:192
+msgid "Number of images to display"
+msgstr ""
+
+#: includes/pages/views/edit.php:202
+msgid "Columns"
+msgstr ""
+
+#: includes/pages/views/edit.php:206
+msgid "Number of images in a row"
+msgstr ""
+
+#: includes/pages/views/edit.php:217
+msgid "Highlight by tag"
+msgstr ""
+
+#: includes/pages/views/edit.php:220
+msgid "Highlight feeds items with this tags"
+msgstr ""
+
+#: includes/pages/views/edit.php:225
+msgid "Highlight by id"
+msgstr ""
+
+#: includes/pages/views/edit.php:228
+msgid "Highlight feeds items with this ids"
+msgstr ""
+
+#: includes/pages/views/edit.php:233
+msgid "Highlight by position"
+msgstr ""
+
+#: includes/pages/views/edit.php:236
+msgid "Highlight feeds items in this positions"
+msgstr ""
+
+#: includes/pages/views/edit.php:247
+msgid "Slides per view"
+msgstr ""
+
+#: includes/pages/views/edit.php:250
+msgid "Number of images per slide"
+msgstr ""
+
+#: includes/pages/views/edit.php:254
+msgid "Autoplay"
+msgstr ""
+
+#: includes/pages/views/edit.php:257
+msgid "Autoplay carousel items"
+msgstr ""
+
+#: includes/pages/views/edit.php:261
+msgid "Autoplay Interval"
+msgstr ""
+
+#: includes/pages/views/edit.php:265
+msgid "Moves to next picture after specified time interval"
+msgstr ""
+
+#: includes/pages/views/edit.php:269
+msgid "Navigation"
+msgstr ""
+
+#: includes/pages/views/edit.php:272
+msgid "Display navigation arrows"
+msgstr ""
+
+#: includes/pages/views/edit.php:276
+msgid "Navigation color"
+msgstr ""
+
+#: includes/pages/views/edit.php:279
+msgid "Change navigation arrows color"
+msgstr ""
+
+#: includes/pages/views/edit.php:283
+msgid "Pagination"
+msgstr ""
+
+#: includes/pages/views/edit.php:286
+msgid "Display pagination dots"
+msgstr ""
+
+#: includes/pages/views/edit.php:290
+msgid "Pagination color"
+msgstr ""
+
+#: includes/pages/views/edit.php:293
+msgid "Change pagination dotts color"
+msgstr ""
+
+#: includes/pages/views/edit.php:303
+msgid "Images size"
+msgstr ""
+
+#: includes/pages/views/edit.php:306
+msgid "Standard"
+msgstr ""
+
+#: includes/pages/views/edit.php:307
+msgid "Medium"
+msgstr ""
+
+#: includes/pages/views/edit.php:308
+msgid "Small"
+msgstr ""
+
+#: includes/pages/views/edit.php:313
+msgid "Images spacing"
+msgstr ""
+
+#: includes/pages/views/edit.php:317 includes/pages/views/edit.php:378
+#: includes/pages/views/edit.php:407
+msgid "Add blank space between images"
+msgstr ""
+
+#: includes/pages/views/edit.php:328
+msgid "Images card"
+msgstr ""
+
+#: includes/pages/views/edit.php:332
+msgid "Display card gallery by clicking on image"
+msgstr ""
+
+#: includes/pages/views/edit.php:344
+msgid "Card radius"
+msgstr ""
+
+#: includes/pages/views/edit.php:354
+msgid "Card font size"
+msgstr ""
+
+#: includes/pages/views/edit.php:358
+msgid "Add font-size to the Instagram Feed"
+msgstr ""
+
+#: includes/pages/views/edit.php:364
+msgid "Card background"
+msgstr ""
+
+#: includes/pages/views/edit.php:368
+msgid "Color which is displayed when carded over images"
+msgstr ""
+
+#: includes/pages/views/edit.php:374
+msgid "Card padding"
+msgstr ""
+
+#: includes/pages/views/edit.php:383
+msgid "Card info"
+msgstr ""
+
+#: includes/pages/views/edit.php:387 includes/pages/views/edit.php:454
+#: includes/pages/views/edit.php:468 includes/pages/views/edit.php:507
+msgid "Display likes count of images"
+msgstr ""
+
+#: includes/pages/views/edit.php:393
+msgid "Card caption"
+msgstr ""
+
+#: includes/pages/views/edit.php:397
+msgid "Display caption count of images"
+msgstr ""
+
+#: includes/pages/views/edit.php:403
+msgid "Card length"
+msgstr ""
+
+#: includes/pages/views/edit.php:418
+msgid "Images popup"
+msgstr ""
+
+#: includes/pages/views/edit.php:421
+msgid "Display popup gallery by clicking on image"
+msgstr ""
+
+#: includes/pages/views/edit.php:432
+msgid "Images popup profile"
+msgstr ""
+
+#: includes/pages/views/edit.php:442
+msgid "Images popup caption"
+msgstr ""
+
+#: includes/pages/views/edit.php:445
+msgid "Display caption in the popup"
+msgstr ""
+
+#: includes/pages/views/edit.php:450
+msgid "Images popup likes"
+msgstr ""
+
+#: includes/pages/views/edit.php:460
+msgid "Images popup align"
+msgstr ""
+
+#: includes/pages/views/edit.php:463
+msgid "Top"
+msgstr ""
+
+#: includes/pages/views/edit.php:464
+msgid "Left"
+msgstr ""
+
+#: includes/pages/views/edit.php:465
+msgid "Right"
+msgstr ""
+
+#: includes/pages/views/edit.php:466
+msgid "Bottom"
+msgstr ""
+
+#: includes/pages/views/edit.php:479
+msgid "Images mask"
+msgstr ""
+
+#: includes/pages/views/edit.php:483
+msgid "Image mouseover effect"
+msgstr ""
+
+#: includes/pages/views/edit.php:494
+msgid "Images mask color"
+msgstr ""
+
+#: includes/pages/views/edit.php:498
+msgid "Color which is displayed when hovered over images"
+msgstr ""
+
+#: includes/pages/views/edit.php:503
+msgid "Images mask likes"
+msgstr ""
+
+#: includes/pages/views/edit.php:512
+msgid "Images mask comments"
+msgstr ""
+
+#: includes/pages/views/edit.php:516
+msgid "Display comments count of images"
+msgstr ""
+
+#: includes/pages/views/edit.php:527
+msgid "Instagram load more"
+msgstr ""
+
+#: includes/pages/views/edit.php:531
+msgid "Display the load more button"
+msgstr ""
+
+#: includes/pages/views/edit.php:543
+msgid "Instagram load more text"
+msgstr ""
+
+#: includes/pages/views/edit.php:547
+msgid "Instagram load more text here"
+msgstr ""
+
+#: includes/pages/views/edit.php:553
+msgid "Instagram load more background"
+msgstr ""
+
+#: includes/pages/views/edit.php:557
+msgid "Color which is displayed on button load background"
+msgstr ""
+
+#: includes/pages/views/edit.php:563
+msgid "Instagram load more hover background"
+msgstr ""
+
+#: includes/pages/views/edit.php:567
+msgid "Color which is displayed when hovered over button load more"
+msgstr ""
+
+#: includes/pages/views/edit.php:579
+msgid "Instagram button"
+msgstr ""
+
+#: includes/pages/views/edit.php:583
+msgid "Display the button to open Instagram site link"
+msgstr ""
+
+#: includes/pages/views/edit.php:594
+msgid "Instagram button text"
+msgstr ""
+
+#: includes/pages/views/edit.php:598
+msgid "Instagram button text here"
+msgstr ""
+
+#: includes/pages/views/edit.php:603
+msgid "Instagram button background"
+msgstr ""
+
+#: includes/pages/views/edit.php:606
+msgid "Color which is displayed on button background"
+msgstr ""
+
+#: includes/pages/views/edit.php:610
+msgid "Instagram button hover background"
+msgstr ""
+
+#: includes/pages/views/edit.php:613
+msgid "Color which is displayed when hovered over button"
+msgstr ""
+
+#: includes/pages/views/edit.php:626
+#, php-format
+msgid ""
+"Update settings and copy/paste generated shortcode in your post/pages or go "
+"to Widgets and use %s widget"
+msgstr ""
+
+#: includes/pages/views/list.php:7 includes/pages/views/list.php:9
+#: includes/widget.php:67
+msgid "Add New Gallery"
+msgstr ""
+
+#: includes/pages/views/list.php:18
+msgid "Source"
+msgstr ""
+
+#: includes/pages/views/list.php:20
+msgid "Shortcode"
+msgstr ""
+
+#: includes/pages/views/list.php:51
+msgid "Edit"
+msgstr ""
+
+#: includes/pages/welcome.php:10
+msgid ""
+"Hello we're QuadLayers! We've recently acquired this plugin and this is the "
+"first update. We will do our absolute best to support it and fix all the "
+"issues."
+msgstr ""
+
+#: includes/pages/welcome.php:15
+msgid "Community"
+msgstr ""
+
+#: includes/pages/welcome.php:17
+#, php-format
+msgid ""
+"If you want to get in touch with other %s users or be aware of our "
+"promotional discounts join our community now."
+msgstr ""
+
+#: includes/pages/welcome.php:19
+msgid "Join us"
+msgstr ""
+
+#: includes/pages/welcome.php:22
+msgid "Demo"
+msgstr ""
+
+#: includes/pages/welcome.php:24
+#, php-format
+msgid ""
+"Thank you for choosing our %s plugin for WordPress! Here you can see our "
+"demo and a description about the features we offer in the premium version."
+msgstr ""
+
+#: includes/pages/welcome.php:26
+msgid "View demo"
+msgstr ""
+
+#: includes/pages/welcome.php:29
+msgid "Support"
+msgstr ""
+
+#: includes/pages/welcome.php:31
+#, php-format
+msgid ""
+"If you have any doubt or you find any issue don't hesitate to contact us "
+"through our ticket system or join our community to meet other %s users."
+msgstr ""
+
+#: includes/pages/welcome.php:33
+msgid "Submit ticket"
+msgstr ""
+
+#: includes/settings.php:15
+msgid "Settings"
+msgstr ""
+
+#: includes/settings.php:34
+#, php-format
+msgid ""
+"Thanks for using %s! We will do our absolute best to support you and fix all "
+"the issues."
+msgstr ""
+
+#: includes/settings.php:37
+msgid "Check out our demo"
+msgstr ""
+
+#: includes/settings.php:56
+msgid "QuadLayers"
+msgstr ""
+
+#: includes/settings.php:140
+msgid "Welcome"
+msgstr ""
+
+#: includes/settings.php:141
+msgid "Account"
+msgstr ""
+
+#: includes/settings.php:142
+msgid "Feeds"
+msgstr ""
+
+#: includes/settings.php:153
+msgid "Are you sure want to delete this item?"
+msgstr ""
+
+#: includes/settings.php:154
+msgid "Are you sure want to delete this access token?"
+msgstr ""
+
+#: includes/settings.php:155
+msgid "Are you sure want to delete all settings on plugin uninstall?"
+msgstr ""
+
+#: includes/utis.php:19 includes/utis.php:70
+msgid "Something went wrong, remove this token"
+msgstr ""
+
+#: includes/utis.php:82
+#, php-format
+msgid "Tag #%s"
+msgstr ""
+
+#: includes/utis.php:95
+msgid "Please update Instagram User in the gallery settings tab."
+msgstr ""
+
+#: includes/utis.php:100
+msgid "Please update Instagram Access Token in the account settings tab."
+msgstr ""
+
+#: includes/widget.php:10
+msgid "Displays your Instagram gallery"
+msgstr ""
+
+#: includes/widget.php:42
+msgid "Title"
+msgstr ""
+
+#: includes/widget.php:46
+msgid "Select your Instagram gallery"
+msgstr ""
+
+#: includes/widget.php:52
+msgid "Username"
+msgstr ""
+
+#: includes/widget.php:54
+msgid "Tagname"
+msgstr ""
+
+#: includes/widget.php:63
+msgid ""
+"Please add Gallery item in plugin panel, Then come back and select your "
+"Gallery to display."
+msgstr ""
+
+#: insta-gallery.php:83
+#, php-format
+msgid "Hello! Thank you for choosing the %s plugin!"
+msgstr ""
+
+#: insta-gallery.php:85
+msgid ""
+"Could you please give it a 5-star rating on WordPress? We know its a big "
+"favor, but we've worked very much and very hard to release this great "
+"product. Your feedback will boost our motivation and help us promote and "
+"continue to improve this product."
+msgstr ""
+
+#: insta-gallery.php:88
+msgid "Yes, of course!"
+msgstr ""
+
+#: insta-gallery.php:91
+msgid "Report a bug"
+msgstr ""
+
+#: templates/alert.php:2
+msgid "Unable to get results"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WP Social Feed Gallery"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://quadlayers.com/portfolio/instagram-gallery/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Display beautifull and responsive galleries on your website from your "
+"Instagram feed account."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Quadlayers"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://quadlayers.com"
+msgstr ""

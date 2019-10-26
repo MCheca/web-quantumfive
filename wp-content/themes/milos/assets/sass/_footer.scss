@@ -1,0 +1,45 @@
+/* -----------------------------------------
+	07. Site Footer
+----------------------------------------- */
+.footer {
+	text-align: center;
+	padding: 100px 0;
+	border-top: 1px solid $border-color;
+}
+
+.brand-footer {
+	margin-bottom: 30px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.site-logo-footer {
+	margin: 0;
+	line-height: 1.2;
+}
+
+.nav-footer {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+		text-transform: uppercase;
+		font-size: 12px;
+		font-family: $secondary-font;
+		color: $black;
+		margin: 5px 15px;
+		font-weight: bold;
+		letter-spacing: -.05em;
+
+		&:hover {
+			color: $accent-color;
+		}
+	}
+}

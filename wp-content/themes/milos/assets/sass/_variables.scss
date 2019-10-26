@@ -1,0 +1,45 @@
+// Grid
+// =========================================
+$enable-flex:         true !default;
+$enable-grid-classes: true !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+	xl: 1170px
+) !default;
+
+$grid-columns:      12 !default;
+$grid-gutter-width: 30px !default;
+
+
+// Colors
+// =========================================
+$white:      #fff !default;
+$black:      #232323 !default;
+$grey:       #f9f9f9 !default;
+$light-grey: #ebebeb !default;
+$dark-grey:  darken($light-grey, 4%) !default;
+
+$body-bg:        $white !default;
+$accent-color:   #00a9ef !default;
+$accent-active:  lighten($accent-color, 10%) !default;
+$text-on-accent: $white !default;
+$text-color:     #444 !default;
+$heading-color:  $black !default;
+$border-color:   $light-grey !default;
+
+
+// Fonts
+// =========================================
+$primary-font:   "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+$secondary-font: Montserrat, sans-serif;

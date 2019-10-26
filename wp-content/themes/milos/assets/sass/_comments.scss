@@ -1,0 +1,135 @@
+/* -----------------------------------------
+	08. WordPress Comments
+----------------------------------------- */
+#comments {
+	margin: 40px 0 0;
+}
+
+.comments-title {
+	font-size: 36px;
+	text-align: center;
+}
+
+.comment-list {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+
+	.comment {
+		list-style: none;
+
+		@include media-breakpoint-down(sm) {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.comment-body {
+		margin-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	> .comment {
+		&:first-child {
+			> .comment-body {
+				border-top: 0;
+				padding-top: 0;
+			}
+		}
+	}
+}
+
+.post-comments {
+	margin: 0 0 45px;
+
+	> h3 {
+		text-align: center;
+	}
+}
+
+.comment-author {
+	.avatar {
+		width: 64px;
+		height: 64px;
+		float: left;
+		margin: 0 15px 15px 0;
+		overflow: visible;
+		border-radius: 2px;
+
+		@include media-breakpoint-down(xs) {
+			display: none;
+		}
+	}
+}
+
+.comment-content {
+	overflow: hidden;
+	zoom: 1;
+	font-size: 13px;
+}
+
+.comment-metadata {
+	font-size: 12px;
+	margin: 0 0 5px;
+}
+
+.comment-reply-title {
+	margin-bottom: 10px;
+}
+
+.comment-reply-link {
+	font-size: 10px;
+	text-transform: uppercase;
+	padding: 4px 10px;
+	margin-left: 80px;
+	height: auto;
+	width: auto;
+
+	@include media-breakpoint-down(sm) {
+		margin: 0;
+	}
+}
+
+.bypostauthor {
+	> article {
+		.fn {
+			&::before {
+				font-family: FontAwesome;
+				content: "\f005";
+				margin: 0 2px 0 -2px;
+				position: relative;
+				top: -1px;
+				font-size: 11px;
+			}
+		}
+	}
+}
+
+.comment-respond {
+	margin-top: 30px;
+
+	> h3 {
+		text-align: center;
+	}
+}
+
+#cancel-comment-reply-link {
+	font-size: 12px;
+	font-weight: normal;
+	margin-left: 5px;
+	text-transform: uppercase;
+	letter-spacing: 0;
+}
+
+.form-allowed-tags,
+.comment-notes {
+	font-size: 12px;
+	line-height: 1.5;
+	color: rgba($text-color, .8);
+	margin: 15px 0;
+	text-align: center;
+}
+
+.form-submit {
+	text-align: center;
+}

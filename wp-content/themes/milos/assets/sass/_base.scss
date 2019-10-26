@@ -1,0 +1,439 @@
+/* -----------------------------------------
+	03. Base & General
+----------------------------------------- */
+// Reset the box-sizing
+html {
+	box-sizing: border-box;
+	-ms-overflow-style: scrollbar; // sass-lint:disable-line no-vendor-prefixes
+	-webkit-tap-highlight-color: rgba($black, 0); // sass-lint:disable-line no-vendor-prefixes
+}
+
+* {
+	box-sizing: inherit;
+
+	&::before,
+	&::after {
+		box-sizing: inherit;
+	}
+}
+
+/* Basic Typography
+=================================== */
+body {
+	line-height: 1.625;
+	font-size: 16px;
+	background-color: $body-bg;
+	color: $text-color;
+	font-family: $primary-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: normal;
+	margin: 0 0 30px;
+	word-wrap: break-word;
+	text-rendering: optimizeLegibility;
+	font-family: $secondary-font;
+	font-weight: bold;
+	color: $heading-color;
+	letter-spacing: -.05em;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 36px;
+}
+
+h4 {
+	font-size: 30px;
+}
+
+h5 {
+	font-size: 24px;
+}
+
+h6 {
+	font-size: 20px;
+}
+
+p {
+	margin: 0 0 15px;
+}
+
+img {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	transition: color .18s ease, background-color .18s ease, border-color .18s ease;
+	color: $accent-color;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: $accent-active;
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: 1px dotted $accent-color;
+	}
+}
+
+.group {
+	@include clearfix;
+}
+
+/* General Element Styling
+=================================== */
+/* Reset figure margin from normalize.css */
+figure {
+	margin: 0;
+}
+
+/* Lists */
+ul, ol {
+	padding-left: 20px;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+dl {
+	margin: 0 0 20px;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 0 15px;
+}
+
+/* Blockquotes */
+blockquote {
+	margin: 20px 0;
+	padding-left: 15px;
+	border-left: 3px solid $border-color;
+	font-size: 17px;
+	font-weight: 300;
+
+	cite {
+		display: block;
+		font-weight: bold;
+		font-style: italic;
+		margin: 10px 0 0;
+		color: rgba($text-color, .8);
+		font-size: 14px;
+	}
+}
+
+hr {
+	border: 0;
+	border-bottom: 1px solid $border-color;
+	margin: 40px 0;
+}
+
+/* Tables */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	width: 100%;
+}
+
+.entry-content {
+	table {
+		border-width: 1px 0 0 1px;
+		margin-bottom: 24px;
+	}
+
+	th,
+	td {
+		border-bottom: 1px solid rgba($black, .1);
+
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+
+	caption,
+	th,
+	td {
+		font-weight: normal;
+		text-align: left;
+		padding: 5px;
+		vertical-align: middle;
+	}
+
+	th {
+		border-width: 0 1px 1px 0;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 85%;
+	}
+
+	td {
+		border-width: 0 1px 1px 0;
+	}
+}
+
+/* Code */
+code, kbd, tt, var, samp, pre {
+	font-family: monospace, serif;
+	hyphens: none;
+	font-style: normal;
+}
+
+pre {
+	padding: 15px;
+	border: 1px solid rgba($black, .1);
+}
+
+/* Various */
+address {
+	margin: 0 0 15px;
+}
+
+.sr-only,
+.screen-reader-text {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+/* Embeds and iframes
+=================================== */
+embed,
+iframe,
+object,
+video,
+audio {
+	margin-bottom: 15px;
+	max-width: 100%;
+	border: 0;
+}
+
+p > embed,
+p > iframe,
+p > object,
+p > audio,
+span > embed,
+span > iframe,
+span > object,
+span > audio {
+	margin-bottom: 0;
+}
+
+#map,
+.map {
+	* {
+		max-width: none !important;
+	}
+}
+
+/* General Form Styling
+=================================== */
+.input-group {
+	margin-bottom: 30px;
+}
+
+label {
+	display: block;
+	margin: 0 0 2px;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+input,
+textarea {
+	display: inline-block;
+	font-size: 13px;
+	line-height: normal;
+	width: 100%;
+	max-width: 100%;
+	height: 50px;
+	padding: 16px 15px 10px;
+	box-shadow: none;
+	background-color: $light-grey;
+	background-image: none;
+	border-radius: 1px;
+	border: 0;
+	border-bottom: 3px solid transparent;
+	transition: border-color .18s ease;
+
+	&:focus {
+		outline: none;
+		border-bottom-color: $dark-grey;
+	}
+
+	@include media-breakpoint-down(xs) {
+		width: 100%;
+	}
+}
+
+input[type="date"] {
+	appearance: textfield;
+}
+
+input[type="search"] { /* Restoring box-sizing */
+	box-sizing: border-box;
+}
+
+textarea {
+	height: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	min-height: 140px;
+}
+
+select {
+	@include select-style;
+}
+
+.ci-select {
+	position: relative;
+	width: 100%;
+	height: 50px;
+
+	select {
+		width: 100%;
+		height: 100%;
+		max-width: 100%;
+		appearance: none;
+		padding: 16px 15px 10px;
+		font-size: 13px;
+		line-height: normal;
+		box-shadow: none;
+		background-color: $light-grey;
+		background-image: none;
+		border-radius: 1px;
+		border: 0;
+		border-bottom: 3px solid transparent;
+		transition: border-color .18s ease;
+
+		&::-ms-expand { // sass-lint:disable-line no-vendor-prefixes
+			display: none;
+		}
+	}
+
+	&::after {
+		content: "\f431";
+		font-family: Genericons;
+		font-size: 20px;
+		position: absolute;
+		top: 0;
+		line-height: 52px;
+		right: 12px;
+		height: 100%;
+		color: $text-color;
+		pointer-events: none;
+	}
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	margin: 4px 0 0;
+	line-height: normal;
+	width: auto;
+	height: auto;
+}
+
+fieldset {
+	margin: 0 0 15px;
+	padding: 0;
+	border: 0;
+	min-width: 0;
+}
+
+/* Placeholder text color */
+@include placeholder {
+	color: rgba($text-color, .5);
+	font-weight: normal;
+	opacity: 1;
+}
+
+/* Buttons
+=================================== */
+.btn,
+.comment-reply-link,
+input[type="submit"],
+input[type="reset"],
+button {
+	@include button;
+	@include button-md;
+}
+
+.btn-sm {
+	@include button-sm;
+}
+
+.btn-lg {
+	@include button-lg;
+}
+
+.btn-block {
+	min-width: 100%;
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.btn-round {
+	border-radius: 50%;
+	padding: 0;
+	width: 52px;
+	height: 52px;
+	font-size: 24px;
+	line-height: 52px;
+	text-align: center;
+}
+
+.btn-arrow {
+	&::after {
+		content: "\2192";
+		margin-left: 7px;
+	}
+}
+
+/* Text Alignment Helpers
+=================================== */
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-justified {
+	text-align: justify;
+}
+
+.align-items-center {
+	align-items: center;
+}
